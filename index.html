@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  body::after {
+  content: "";
+  background: url('_fa206dc4-11fa-49f6-8c67-954d7a9e5c28.jpeg');
+  position: fixed; /* Change this from absolute to fixed */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Add a blur effect to the background image */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+    .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+       
+    .courses{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .course {
+            border: 1px solid #ddd;
+            color: white;
+            margin: 10px;
+            padding: 10px;
+            width: 30%;
+        }
+        .course{
+            transition: tranform.10s;
+        }
+        .course:hover{
+            transform: scale(1.1);
+        }
+        .course button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+        .course button:hover {
+        background-color: #0056b3;
+    }
+    .container {
+  width: 200%;
+  overflow: hidden;
+  display: flex;
+  animation: slide 20s linear infinite;
+}
+
+.banner {
+  width: 50%;
+  height: 450px;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  40% { transform: translateX(0); }
+  50% { transform: translateX(-50%); }
+  90% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+.footer {
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+</style>
+<body>
+    
+    <div class="navbar">
+        <a href="#home">CODE</a>
+        <a href="#shop">Shop</a>
+        <a href="#login">Login</a>
+        <div style="float:right; padding: 10px;">
+          <input type="text" placeholder="Search..">
+        </div>
+      </div>
+      <div class="container">
+        <div class="banner">
+          <img src="Yellow and Black Super Weekend Sale Banner .png" alt="Banner 1">
+        </div>
+        <div class="banner">
+          <img src="Black and Red Memphis Black Friday Sale Banner Landscape.png" alt="Banner 2">
+        </div>
+      </div>
+      
+    <div class="courses">
+        <div class="course">
+            
+            <h2>
+                <b>
+                    <i>
+                        <u>
+                            Java for beginners
+                        </u>
+                       
+                    </i>
+                </b>
+            </h2>
+             <p>This course is designed for individuals with little or no prior programming experience who are looking to get started with Java.
+            </p>
+            <p>
+                <b><i><u><h3>Course Content:</h3></u></i></b>
+                <ul>
+                    <li><b>Introduction to Java</b></li>
+                    <li><b>Basics of Java</b></li>
+                    <li><b>Object-Oriented Programming (OOP)</b></li>
+                    <li><b>Data Structures</b></li>
+                    <li><b>Exception Handling</b>:</li>
+                    <li><b>Java Libraries and APIs</b></li>
+                </ul>
+                <button><a href="myform.php">Enroll Now</a></button>
+                 <p><s>₹2000</s> ₹1200</p>
+            </p>        </div>
+        <div class="course">
+            <h2>
+                <b>
+                    <i>
+                        Java for advance
+                    </i>
+                </b>
+            </h2>
+            <p>This course is a part of java progamming language that is specifically designed to develop web-based, network-centric or enterprise application</p>
+           <p><b><i><u><h3>Course Content</h3></u></i></b>
+           <ul>
+            <li><b>Introduction to Java</b></li>
+            <li><b>Fundamentals of Java programming</b></li>
+            <li><b>Control Structures</b></li>
+            <li><b>Input Fundamentals and datatypes in java</b></li>
+            <li><b>Object-Oriented Programming (OOPs concept in deep)</b>:</li>
+            <li><b>Java Libraries and APIs</b></li></p>
+        </ul>
+        <button>Enroll Now</button> <p><s>₹3000</s> ₹1800</p>
+        </div>
+        <div class="course">
+            <h2>
+                <b>
+                    <i>
+                        Python for beginners
+                    </i>
+                </b>
+            </h2><p>In a beginner’s Python course, students are introduced to core programming concepts like data structures, conditionals, loops, variables, and functions. The course includes an overview of the various tools available for writing and running Python, and gets students coding quickly</p>
+            <p><b><i><u><h3>Course Content</h3></u></i></b>
+                <ul>
+                    <li><b>Introduction to Python</b></li>
+                    <li><b>Basics of Python</b></li>
+                    <li><b>Object-Oriented Programming (OOP)</b></li>
+                    <li><b>Data Structures</b></li>
+                    <li><b>Exception Handling</b>:</li>
+                    <li><b>Python Libraries and APIs</b></li>
+                </ul>
+             <button>Enroll Now</button></p> <p><s>₹2000</s> ₹1200</p>
+            
+        </div>
+        <div class="course">
+            <h2>
+                <b>
+                    <i>
+                        Python for advance
+                    </i>
+                </b>
+            </h2>
+            <p>An advanced Python course is designed to take your Python skills to the next level by introducing you to a range of advanced topics1. Here are some key features of an advanced Python course:</p>
+            <p><b><i><u><h3>Course Content</h3></u></i></b>
+                <ul>
+                    <li><b>Introduction to Python</b></li>
+                    <li><b>Fundamentals of Python programming</b></li>
+                    <li><b>Control Structures</b></li>
+                    <li><b>Input Fundamentals and datatypes in java</b></li>
+                    <li><b>Object-Oriented Programming (OOPs concept in deep)</b>:</li>
+                    <li><b>Python Libraries and APIs</b></li></p>
+                </ul>
+             <button>Enroll Now</button> <p><s>₹3000</s> ₹1800</p>
+        </div>
+        <div class="course">
+            <h2>
+                <b>
+                    <i>
+                        Figma Basic to Advance
+                    </i>
+                </b>
+            </h2>
+            <p>Figma is a collaborative web application for interface design, with additional offline features enabled by desktop applications for macOS and Windows. It’s a UI and UX design application that you can use to create websites, apps, or smaller user interface components that can be integrated into other projects</p>
+            <p><b><i><u><h3>Course Content</h3></u></i></b>
+                <ul>
+                    <li><b>Introduction to Figma</b></li>
+                    <li><b>Designing with Figma</b></li>
+                    <li><b>Colour Pallete</b></li>
+                    <li><b>prototyping with Figma</b></li>
+                    <li><b>Design Systems</b>:</li>
+                    <li><b>Exporting and Handoff</b></li></p>
+                </ul>
+             <button>Enroll Now</button> <p><s>₹4000</s> ₹2400</p>
+        </div>
+    </div>
+    </div>
+   
+
+
+    <div class="footer">
+        &copy; 2024 by Code. All rights reserved.
+      </div>
+    
+</body>
+</html>
